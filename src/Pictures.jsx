@@ -87,8 +87,8 @@ function Pictures() {
     return (
         <div>
             <Plashka value={merch} goods={god} isFirst={isFirst} total={total}></Plashka>
-
-            <div className="ml-32 mt-20 p-3 w-2/3 sm:columns-2  md:columns-3">
+            {/* flex flex-wrap flex-row justify-around*/}
+            <div className="ml-32 mt-20 p-3 w-2/3 grid grid-cols-4">
                 {renderCard(prices[0])}
                 {renderCard(prices[1])}
                 {renderCard(prices[2])}
